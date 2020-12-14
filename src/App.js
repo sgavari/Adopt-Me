@@ -1,5 +1,5 @@
 import React from 'react';
-import { react } from 'react-dom';
+import { render } from 'react-dom';
 
 const Pet = ({ name, animal, breed }) => {
   return React.createElement("div", {}, [
@@ -29,4 +29,4 @@ const App = () => {
     }),
   ]);
 };
-react.render(React.createElement(App), document.getElementById("root"));
+render(React.createElement(App), document.getElementById("root"));
